@@ -1,2 +1,4 @@
 # Classification-ML-Model
 Classification model for predicting pupil’s (450+) vision on mistake
+
+I have developed a supervised machine learning model using Pandas and Scikit-learn libraries for concluding pupil's perception on error. While preprocessing, I have removed the outliers, then encoded categorical variables using LabelEncoder. Feature selection was performed using SelectFromModel along with LassoCV for getting 4 best estimators. Because one class was undersampled, I have chosen StratifiedKFolds with k=5 for cross validation. The best average scoring model was SVC with 0.6, out of LogisticRegression, DecisionTreeClassifier, RandomForestClassifier. The model was evaluated using precision, recall and f1 score. For boosting model's performance, I have tuned hyperparameters with GradientBoostingClassifier and reached a 0.755 score.
